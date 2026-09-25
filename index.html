@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Defines the character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the website responsive on different screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title displayed in the browser tab -->
+    <title>Port Scanner</title>
+
+    <!-- Connects the HTML file to the CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Main container for the complete application -->
+    <div class="container">
+
+        <!-- Website heading -->
+        <h1>Network Port Scanner</h1>
+
+        <!-- Short description -->
+        <p class="subtitle">
+            Scan an IP address and identify open ports
+        </p>
+
+        <!-- Section containing the IP input -->
+        <div class="scanner-box">
+
+            <!-- Label for IP address input -->
+            <label for="ipAddress">Enter IP Address</label>
+
+            <!-- Input field where the user enters an IP -->
+            <input
+                type="text"
+                id="ipAddress"
+                placeholder="Example: 192.168.1.10"
+            >
+
+            <!-- Button that starts the scan -->
+            <button id="scanButton" onclick="startScan()">
+                Scan Ports
+            </button>
+
+        </div>
+
+        <!-- Area where scanning status will be displayed -->
+        <div id="status"></div>
+
+        <!-- Results section -->
+        <div class="results-box">
+
+            <!-- Results heading -->
+            <h2>Scan Results</h2>
+
+            <!-- Table for displaying open ports -->
+            <table>
+
+                <!-- Table headings -->
+                <thead>
+                    <tr>
+                        <th>Port</th>
+                        <th>Protocol</th>
+                        <th>State</th>
+                        <th>Service</th>
+                    </tr>
+                </thead>
+
+                <!-- JavaScript will insert results here -->
+                <tbody id="results">
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <!-- Connects the HTML file to the JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
