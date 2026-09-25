@@ -1,0 +1,160 @@
+/* Removes default spacing from all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles the complete webpage */
+body {
+    font-family: Arial, sans-serif;
+    background: #0b0f14;
+    color: #ffffff;
+    min-height: 100vh;
+
+    /* Centers the main container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main application container */
+.container {
+    width: 90%;
+    max-width: 900px;
+    padding: 40px;
+
+    background: #111820;
+    border: 1px solid #263442;
+    border-radius: 12px;
+
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Main heading */
+h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* Text below the heading */
+.subtitle {
+    text-align: center;
+    color: #9aa7b3;
+    margin-bottom: 35px;
+}
+
+/* Input and button section */
+.scanner-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Input label */
+label {
+    font-size: 15px;
+    color: #cbd5df;
+}
+
+/* IP address input */
+input {
+    width: 100%;
+    padding: 14px;
+
+    background: #0b0f14;
+    color: white;
+
+    border: 1px solid #344454;
+    border-radius: 6px;
+
+    font-size: 16px;
+    outline: none;
+}
+
+/* Changes input border when selected */
+input:focus {
+    border-color: #4da3ff;
+}
+
+/* Scan button */
+button {
+    margin-top: 8px;
+    padding: 14px;
+
+    background: #1976d2;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+button:hover {
+    background: #1565c0;
+}
+
+/* Status message area */
+#status {
+    margin-top: 20px;
+    text-align: center;
+    color: #9aa7b3;
+}
+
+/* Results section */
+.results-box {
+    margin-top: 35px;
+}
+
+/* Results heading */
+.results-box h2 {
+    margin-bottom: 15px;
+}
+
+/* Makes the table use the complete available width */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Table headings and cells */
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #263442;
+}
+
+/* Table heading styling */
+th {
+    color: #9aa7b3;
+    font-size: 14px;
+}
+
+/* Open port state */
+.open {
+    color: #4caf50;
+    font-weight: bold;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+
+    .container {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        font-size: 13px;
+    }
+}
